@@ -22,6 +22,13 @@ body {
   background-color: var(--main-bg-color);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -62,6 +69,9 @@ body {
 }
 
 .btn {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -145,18 +155,34 @@ body {
 /* hero section */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--dark-bg-color);
 }
 
-.hero__title {
+.hero-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 696px;
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--dark-bg-text-color);
 }
+
+.hero-btn {
+  padding: 10px 32px;
+}
+
+/* benefits */
 
 .benefits__title {
   font-weight: 700;
