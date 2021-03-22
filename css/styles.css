@@ -1,0 +1,242 @@
+/* Variables */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --dark-bg-text-color: #ffffff;
+  --address-text-color: rgba(255, 255, 255, 0.6);
+  --light-bg-text-color: #000000;
+  --accent-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+}
+
+/* Utility Classes*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1200px;
+  outline: 1px solid teal;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Specific CSS Rulesets */
+
+/* logo */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo--dark {
+  color: var(--light-bg-text-color);
+}
+
+.logo--light {
+  color: var(--dark-bg-text-color);
+}
+
+/* nav */
+
+.header-nav {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 95px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link,
+.contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-link--active {
+  color: var(--accent-color);
+}
+
+/* hero section */
+
+.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dark-bg-text-color);
+}
+
+.benefits__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team__member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.team__member-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: var(--dark-bg-color);
+}
+
+.location,
+.email,
+.tel {
+  font-style: normal;
+}
+
+.location {
+  color: var(--dark-bg-text-color);
+}
+
+.email,
+.tel {
+  color: var(--address-text-color);
+}
+
+.location:hover,
+.location:focus,
+.email:hover,
+.tel:hover,
+.email:focus,
+.tel:focus {
+  color: var(--accent-color);
+}
+
+.filter-btn {
+  background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--dark-bg-text-color);
+}
+
+.portfolio-item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.portfolio-item__category {
+  font-size: 16px;
+  line-height: 1.87;
+}
