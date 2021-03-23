@@ -65,7 +65,10 @@ img {
   width: 1200px;
   /* outline: 1px solid teal; */
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -109,7 +112,9 @@ img {
 }
 
 /* nav */
-
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .header-nav {
   display: flex;
 }
@@ -190,10 +195,6 @@ img {
 }
 
 /* benefits */
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .benefits-list {
   display: flex;
@@ -215,10 +216,10 @@ img {
 }
 
 /* services */
-.services {
-  padding-bottom: 94px;
-}
 
+.services {
+  padding-top: 0;
+}
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -227,8 +228,6 @@ img {
 /* team section */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -308,10 +307,6 @@ img {
 /* PORTFOLIO */
 
 /* Filters */
-.portfolio-gallery {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .filter-list {
   display: flex;
